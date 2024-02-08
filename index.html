@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja-jp" /> 
+	<head>
+	        <meta charset="utf-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!--<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@1200&display=swap" rel="stylesheet">-->
+		<link rel="icon" type="image/png" href="Images/julia_icon.png">
+		<style>
+			h1{	margin-top: 80px;}
+			canvas{	margin-top: 80px;
+				border:4px solid black;
+				background-color: rgba(150,150,150,1);
+				cursor: none;}
+			body{	font-family: 'Noto Serif JP', serif;
+				text-align: center;
+				background:rgb(0, 0, 0);
+				color: #ccc;}
+		</style>
+		<h1 id="loading">please wait patiently...</h1>
+		<h2 id="instructions">press d to swing sword, arrows to move</h2>
+	</head>
+
+	<body onload="startGame()" ontouchstart="swingSword()" id="touchArea">
+		<h1 style="font-size: 48px; position: absolute; top: 65%; left: 10%;">サムライ死闘</h1>
+		<canvas id="myCanvas" />
+		<script src="utils.js"></script>
+	</body>
+</html>
